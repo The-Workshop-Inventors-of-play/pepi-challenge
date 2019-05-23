@@ -3,21 +3,38 @@ package internal.coding.challenge.pepi.domain;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
 public class City {
 
     @NotNull
-    String name;
+    private String name;
 
     @NotNull
     @Min(0)
-    Integer reward;
+    private Integer reward;
 
-    Boolean base = false;
+    private Boolean base = false;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Integer getReward() {
+        return reward;
+    }
+
+    public void setReward(Integer reward) {
+        this.reward = reward;
+    }
+
+    public Boolean getBase() {
+        return base;
+    }
+
+    public void setBase(Boolean base) {
+        this.base = base;
+    }
 }

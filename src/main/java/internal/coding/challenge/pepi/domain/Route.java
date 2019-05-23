@@ -7,19 +7,22 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.validation.constraints.NotNull;
 
-import lombok.Value;
-
-@Value
 public class Route {
 
     @NotNull
-    List<String> cities;
+    private final List<String> cities;
 
     @NotNull
-    Integer totalCost;
+    private final Integer totalCost;
 
     @NotNull
-    Integer totalReward;
+    private final Integer totalReward;
+
+    public Route(@NotNull List<String> cities, @NotNull Integer totalCost, @NotNull Integer totalReward) {
+        this.cities = cities;
+        this.totalCost = totalCost;
+        this.totalReward = totalReward;
+    }
 
     public static Route initial(@NotNull String city) {
         return new Route(List.of(city), 0, 0);
@@ -39,5 +42,17 @@ public class Route {
     @JsonIgnore
     public int getLength() {
         return cities.size() - 1;
+    }
+
+    public List<String> getCities() {
+        return cities;
+    }
+
+    public Integer getTotalCost() {
+        return totalCost;
+    }
+
+    public Integer getTotalReward() {
+        return totalReward;
     }
 }

@@ -8,7 +8,7 @@ import java.util.List;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import internal.coding.challenge.pepi.domain.Route;
 import internal.coding.challenge.pepi.service.RoadmapParser;

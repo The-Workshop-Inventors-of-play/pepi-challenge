@@ -28,7 +28,8 @@ Madrid – London – Paris – Berlin – Rome – Madrid : 152 – 55 = 97
   - A file describing the route map (cities, rewards and connections). Find an example [here](src/test/resources/input/exercise1.json)
   - A maximum duration in days.
 - You may choose the coding language of your preference and share your solution with us via GitHub.
-  - We have included a scaffold for a Java application in case you want to use it (JDK 10 + JUnit5) but this is completely optional.
+  - We have included a scaffold for a Java application in case you want to use it (JDK 10 or higher + JUnit 4) but this is completely optional.
+    You can code it from scratch in another language if you prefer so.
 - Include a README file explaining how to run the code.
 - You may present the results in any way (e.g. console output, a formatted file, etc.). Including:
   - The cities composing the optimal route in order of visiting.

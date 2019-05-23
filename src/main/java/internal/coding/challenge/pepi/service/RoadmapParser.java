@@ -6,10 +6,12 @@ import java.io.IOException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import internal.coding.challenge.pepi.domain.Roadmap;
-import lombok.RequiredArgsConstructor;
 
-@RequiredArgsConstructor
 public class RoadmapParser {
+
+    public RoadmapParser(ObjectMapper objectMapper) {
+        this.objectMapper = objectMapper;
+    }
 
     private final ObjectMapper objectMapper;
 
