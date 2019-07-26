@@ -1,6 +1,4 @@
-# The Workshop Coding Challenge: P.E.P.I.
-
-## The Pan-European Poker Inter-challenge (P.E.P.I.) is about to begin.
+## The Pan-European Poker Inter-challenge (PEPI) is about to begin.
 
 Over the course of a week, the organisation is running poker tournaments in all the main European capitals – each one with tempting prizes to be won.
 
